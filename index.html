@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <script src="https://kit.fontawesome.com/cdb42214fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
+  <title>Coffee Break</title>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <a class="logo" href="index.html">Coffee <span>Break</span></a>
+      <div id="menu">
+        <div class="mobile-menu">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#coffee">Café</a></li>
+          <li><a href="#acompanhamento">Acompanhamento</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="containerTop">
+      <div class="user">
+        <picture>
+          <img src="./imagens/profile.png" alt="Foto do usuário">
+        </picture>
+      </div>
+      <div class="local">
+        <p><i class="fa-solid fa-location-dot"></i> Maceió - AL</p>
+      </div>
+      <div class="notifi">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+    </div>
+    <div class="pesquisa"><i class="fa-solid fa-magnifying-glass"></i><input type="search" name="" id="" placeholder="Pesquisar..."></div>
+    <div class="containerCategories" id="coffee">
+      <h1 class="titleCafe">Categorias de café</h1>
+      <nav class="navCategories">
+        <a class="btn btn1" href="#">Cappuccino</a>
+        <a class="btn btn2" href="#">Expresso</a>
+        <a class="btn btn3" href="#">Gelado</a>
+      </nav>
+      <div class="containerCards">
+        <div class="card">
+          <picture>
+            <img src="./imagens/coffee1.png" alt="Imagem de um cappuccino">
+          </picture>
+          <h1>Cappuccino </br> <span>Com leite</span></h1>
+          <div class="containerAdd">
+            <p><span>$ </span>5.50</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <picture>
+            <img src="./imagens/coffee1.png" alt="Imagem de um café expresso">
+          </picture>
+          <h1>Café expresso </br> <span>Com chocolate</span></h1>
+          <div class="containerAdd">
+            <p><span>$ </span>6.50</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <picture>
+            <img src="./imagens/coffee1.png" alt="Imagem de um café gelado">
+          </picture>
+          <h1>Café gelado </br> <span>Com creme</span></h1>
+          <div class="containerAdd">
+            <p><span>$ </span>7.00</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+      <h1 class="titleCro" id="acompanhamento">Acompanhamentos</h1>
+      <div class="containerCards">
+        <div class="card">
+          <picture>
+            <img src="./imagens/boloOreo.jpg" alt="Imagem de um bolo de oreo">
+          </picture>
+          <h1>Bolo de oreo</h1>
+          <div class="containerAdd">
+            <p><span>$ </span>8.00</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <picture>
+            <img src="./imagens/cookies.jpg" alt="Imagem de cookies de chocolate">
+          </picture>
+          <h1>Cookies choco</h1>
+          <div class="containerAdd">
+            <p><span>$ </span>2.00</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <picture>
+            <img src="./imagens/croissant.png" alt="Imagem de um croissant">
+          </picture>
+          <h1>Croissant</h1>
+          <div class="containerAdd">
+            <p><span>$ </span>4.50</p>
+            <div class="btn_add"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./script/index.js"></script>
+</body>
+</html>
