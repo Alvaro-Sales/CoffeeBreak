@@ -9,6 +9,7 @@
   --cor-3: #0080ff;
   --cor-4: #ff8000;
   --cor-5: #00b909;
+  --hover: rgba(34, 34, 34, 0.85);
 }
 
 html {
@@ -81,6 +82,11 @@ header {
   color: var(--cor-3);
 }
 
+.fa-house, .fa-mug-hot, 
+.fa-cookie-bite, .fa-users {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -129,6 +135,7 @@ main {
 }
 
 .containerCards .card {
+  margin: 10px;
   padding: 20px 40px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -138,10 +145,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.card1, .card3, .card4, .card6 {
-  margin: 0 20px;
 }
 
 .card picture img {
@@ -187,7 +190,7 @@ main {
 }
 
 .containerAdd .btnAdd:hover {
-  background-color: var(--cor-3);
+  background-color: var(--hover);
 }
 
 footer {
@@ -206,6 +209,7 @@ footer p {
 
 @media screen and (max-width: 1040px) {
   .containerCards .card {
+    margin: 10px;
     padding: 20px 30px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -216,15 +220,12 @@ footer p {
     align-items: center;
     justify-content: center;
   }
-  
-  .card1, .card3, .card4, .card6 {
-    margin: 0 20px;
-  }
 }
 
 
 @media screen and (max-width: 1000px) {
   .containerCards .card {
+    margin: 10px;
     padding: 20px 25px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -234,10 +235,6 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .card1, .card3, .card4, .card6 {
-    margin: 0 20px;
   }
 }
 
@@ -304,6 +301,7 @@ footer p {
   }
 
   .containerCards .card {
+    margin: 10px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -313,16 +311,13 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .card1, .card3, .card4, .card6 {
-    margin: 0 20px;
   }
 }
 
 
 @media screen and (max-width: 895px) {
   .containerCards .card {
+    margin: 10px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -332,30 +327,6 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .card1 {
-    margin-bottom: 20px;
-  }
-
-  .card2 {
-    margin-bottom: 20px;
-  }
-
-  .card3 {
-    margin-top: 20px;
-  }
-
-  .card4 {
-    margin-bottom: 20px;
-  }
-
-  .card5 {
-    margin-bottom: 20px;
-  }
-
-  .card6 {
-    margin-top: 20px;
   }
 }
 
@@ -369,7 +340,7 @@ footer p {
     position: absolute;
     top: 6vh;
     right: 0;
-    width: 60vw;
+    width: 70vw;
     height: 94vh;
     background-color: var(--cor-2);
     flex-direction: column;
@@ -389,6 +360,11 @@ footer p {
   
   .nav-list li a {
     padding: 20px;
+  }
+
+  .fa-house, .fa-mug-hot, 
+  .fa-cookie-bite, .fa-users {
+    display: initial;
   }
   
   .mobile-menu {
@@ -438,7 +414,7 @@ footer p {
   }
 
   .containerCards .card {
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
