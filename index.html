@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,191 +11,227 @@
   <title>Coffee Break</title>
 </head>
 <body>
-  <header>
-    <nav class="navigation">
-      <a class="logo" href="index.html">Coffee <span>Break</span></a>
-      <div id="menu">
-        <div class="mobile-menu">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
+  <div class="container-screen">
+    <aside class="sideBar">
+      <header class="sideBar-header">
+        <h1 class="logo">Coffee <span>Break</span></h1>
+      </header>
+    
+      <nav class="nav">
+        <button class="btn-menu">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </button>
+
+        <button class="btn-menu">
+          <a href="#coffee">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Coffee</span>
+          </a>
+        </button>
+
+        <button class="btn-menu">
+          <a href="#acompanhamento">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <span>Accompaniments</span>
+          </a>
+        </button>
+
+        <button class="btn-menu">
+          <a href="#aboutUs">
+            <i class="fa-solid fa-users"></i>
+            <span>About Us</span>
+          </a>
+        </button>
+      </nav>
+    </aside>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide slideTop" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" id="editCor" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="editCor"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" id="editCor"></button>
         </div>
-      
-        <ul class="nav-list">
-          <li><a href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
-          <li><a href="#coffee">Café <i class="fa-solid fa-mug-hot"></i></a></li>
-          <li><a href="#acompanhamento">Acompanhamento <i class="fa-solid fa-cookie-bite"></i></a></li>
-          <li><a href="#">Sobre nós <i class="fa-solid fa-users"></i></a></li>
-        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <img src="./imagens/Banner.jpg" class="d-block w-100" alt="Banner 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./imagens/Banner-2.jpg" class="d-block w-100" alt="Banner 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagens/Banner-3.jpg" class="d-block w-100" alt="Banner 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div id="carouselExampleIndicators" class="carousel slide slideTop" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" id="editCor" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="editCor"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" id="editCor"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="7000">
-          <img src="./imagens/Banner.jpg" class="d-block w-100" alt="Banner 1">
-        </div>
-        <div class="carousel-item" data-bs-interval="7000">
-          <img src="./imagens/Banner-2.jpg" class="d-block w-100" alt="Banner 2">
-        </div>
-        <div class="carousel-item">
-          <img src="./imagens/Banner-3.jpg" class="d-block w-100" alt="Banner 3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="containerAll">
-      <h1 class="titleCafe" id="coffee">Cafés</h1>
-      <div class="containerCards">
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee.png" alt="Imagem de uma xícara de café">
-          </picture>
-          <h1>Cappuccino</br><span>Com leite</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>5.50</p>
-            <a href="#" class="btnAdd">Comprar</a>
+      <div class="containerAll">
+        <h1 class="titleCafe" id="coffee">Cafes</h1>
+        <div class="containerCards">
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee.png" alt="Picture of cappuccino">
+            </picture>
+            <h1>Cappuccino</br><span>With milk</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>5.50</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee2.png" alt="Picture of coffee express">
+            </picture>
+            <h1>Coffee express</br><span>With chocolate</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>6.00</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee3.png" alt="Picture of cappuccino">
+            </picture>
+            <h1>Cappuccino</br><span>With cream</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>5.30</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee4.png" alt="Picture of ice coffee">
+            </picture>
+            <h1>Ice coffee</br><span>With milk</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>6.20</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee3.png" alt="Picture of cup with coffee">
+            </picture>
+            <h1>Coffee</br><span>With cinnamon</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>6.20</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="./imagens/coffee.png" alt="Picture of cup with coffee">
+            </picture>
+            <h1>Coffee</br><span>With cream</span></h1>
+            <div class="containerAdd">
+              <p><span>$</span>6.20</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee2.png" alt="Imagem de uma xícara de café">
-          </picture>
-          <h1>Café expresso</br><span>Com chocolate</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>6.00</p>
-            <a href="#" class="btnAdd">Comprar</a>
+        <h1 class="titleAcompanha" id="acompanhamento">Accompaniments</h1>
+        <div class="containerCards">
+          <div class="card">
+            <picture>
+              <img src="./imagens/boloOreo.jpg" alt="Picture of Oreo cake">
+            </picture>
+            <h1>Oreo cake</h1>
+            <div class="containerAdd">
+              <p><span>$</span>8.00</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee3.png" alt="Imagem de uma xícara de café">
-          </picture>
-          <h1>Cappuccino</br><span>Com creme</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>5.30</p>
-            <a href="#" class="btnAdd">Comprar</a>
+          <div class="card">
+            <picture>
+              <img src="./imagens/cupcake.jpg" alt="Picture of cupcakes">
+            </picture>
+            <h1>Cupcake</h1>
+            <div class="containerAdd">
+              <p><span>$</span>3.00</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee4.png" alt="Imagem de um café gelado">
-          </picture>
-          <h1>Café gelado</br><span>Com leite</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>6.20</p>
-            <a href="#" class="btnAdd">Comprar</a>
+          <div class="card">
+            <picture>
+              <img src="./imagens/doces.jpg" alt="Picture of coconut candy">
+            </picture>
+            <h1>Coconut candy</h1>
+            <div class="containerAdd">
+              <p><span>$</span>1.00</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee3.png" alt="Imagem de um café gelado">
-          </picture>
-          <h1>Café</br><span>Com canela</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>6.20</p>
-            <a href="#" class="btnAdd">Comprar</a>
+          <div class="card">
+            <picture>
+              <img src="./imagens/cookies.jpg" alt="Picture of cookies of chocolate">
+            </picture>
+            <h1>Cookies choco</h1>
+            <div class="containerAdd">
+              <p><span>$</span>2.00</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <picture>
-            <img src="./imagens/coffee.png" alt="Imagem de um café gelado">
-          </picture>
-          <h1>Café</br><span>Com creme</span></h1>
-          <div class="containerAdd">
-            <p><span>$</span>6.20</p>
-            <a href="#" class="btnAdd">Comprar</a>
+          <div class="card">
+            <picture>
+              <img src="./imagens/croissant.png" alt="Picture of croissant">
+            </picture>
+            <h1>Croissant</h1>
+            <div class="containerAdd">
+              <p><span>$</span>4.50</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <h1 class="titleAcompanha" id="acompanhamento">Acompanhamentos</h1>
-      <div class="containerCards">
-        <div class="card">
-          <picture>
-            <img src="./imagens/boloOreo.jpg" alt="Imagem de um bolo de oreo">
-          </picture>
-          <h1>Bolo de oreo</h1>
-          <div class="containerAdd">
-            <p><span>$</span>8.00</p>
-            <a href="#" class="btnAdd">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/cupcake.jpg" alt="Imagem de alguns cupcakes">
-          </picture>
-          <h1>Cupcake</h1>
-          <div class="containerAdd">
-            <p><span>$</span>3.00</p>
-            <a href="#" class="btnAdd">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/doces.jpg" alt="Imagem de doces de coco">
-          </picture>
-          <h1>Docinho de coco</h1>
-          <div class="containerAdd">
-            <p><span>$</span>1.00</p>
-            <a href="#" class="btnAdd">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/cookies.jpg" alt="Imagem de cookies de chocolate">
-          </picture>
-          <h1>Cookies choco</h1>
-          <div class="containerAdd">
-            <p><span>$</span>2.00</p>
-            <a href="#" class="btnAdd">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/croissant.png" alt="Imagem de um croissant">
-          </picture>
-          <h1>Croissant</h1>
-          <div class="containerAdd">
-            <p><span>$</span>4.50</p>
-            <a href="#" class="btnAdd">Comprar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <picture>
-            <img src="./imagens/brownie.jpg" alt="Imagem de brownies">
-          </picture>
-          <h1>Brownie</h1>
-          <div class="containerAdd">
-            <p><span>$</span>2.30</p>
-            <a href="#" class="btnAdd">Comprar</a>
+          <div class="card">
+            <picture>
+              <img src="./imagens/brownie.jpg" alt="Picture of brownies">
+            </picture>
+            <h1>Brownie</h1>
+            <div class="containerAdd">
+              <p><span>$</span>2.30</p>
+              <a href="#" class="btnAdd">Buy</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+      <div class="sobre">
+        <h1 id="aboutUs">About Us</h1>
+        <picture>
+          <img src="imagens/illustra-coffee.png" alt="Illustration of people drinking coffee">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea tenetur quaerat sequi nisi rem? Officiis ullam incidunt nesciunt qui pariatur sit nemo modi unde alias, voluptates molestiae repellendus quos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sapiente fuga molestias eos minima quo odit quas voluptatum quis, eveniet dolores exercitationem facilis, ipsa officiis voluptates dolore corporis hic? Officiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita placeat labore fugiat, in officiis eaque sunt nemo quod maxime illo tempore voluptates? Ratione distinctio architecto voluptas odio magni, perferendis illo.</p>
+      </div>
+    </main>
+  </div>
   <footer>
-    <p>&copy; 2023 Todos os direitos reservados.</p>
+    <div class="container-footer">
+      <div class="contato info-footer">
+        <h4>Phone number</h4>
+        <p>(99) 123-9518</p>
+      </div>
+      <div class="localizacao info-footer">
+        <h4>Adress</h4>
+        <p>123 Anywhere st. - Any city.</p>
+      </div>
+      <div class="rede-social info-footer">
+        <h4>Follow</h4>
+        <div class="icon">
+          <a href="#" class="link-icon"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="link-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="link-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="link-icon"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">&copy; 2023 All rights reserved.</p>
   </footer>
 
   <script src="./script/index.js"></script>
